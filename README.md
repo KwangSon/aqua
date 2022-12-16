@@ -1,7 +1,16 @@
 # aqua
-For open video media using rvv. (support mesa for future..?)
+Open source video (codec) hardware using riscv vector. (wish to be graphic also)
+
+lowrisc ibex + vector (zve32x, 128 vlen)
 
 # plan
-check 1 video -> multiple format(AOM AV1, VP8,9 encoder, decoder)
-what op needs for this.
-bring open source hardware and verified in FPGA.
+1. QEMU to verify logic
+2. 
+
+# fpga
+
+# build
+
+gnu toolchain(gcc + newlibc)
+
+qemu ibex+vector
