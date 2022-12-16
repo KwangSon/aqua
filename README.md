@@ -11,6 +11,14 @@ lowrisc ibex + vector (zve32x, 128 vlen)
 
 # build
 
-gnu toolchain(gcc + newlibc)
+## gnu toolchain(gcc + newlibc)
+```
+../configure --prefix=/opt/riscv --with-arch=rv32imc_zve128x --with-abi=ilp32
+make newlib
+```
 
-qemu ibex+vector
+## qemu ibex+vector
+```
+../configure --target-list=riscv32-softmmu,riscv32-linux-user --enable-debug --enable-linux-user --enable-kvm
+ninja
+```
