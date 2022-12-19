@@ -12,8 +12,9 @@ lowrisc ibex + vector (zve32x, 128 vlen)
 # build
 
 ## gnu toolchain(gcc + newlibc)
+problem about thread not support
 ```
-../configure --prefix=/opt/riscv --with-arch=rv32imc_zve128x --with-abi=ilp32
+../configure --prefix=/opt/riscv --with-arch=rv32imc_zve32x --with-abi=ilp32
 make newlib
 ```
 
